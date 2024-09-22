@@ -29,7 +29,11 @@ function getBookHtml (i, commentIndex) {
     <h2>Kommentare</h2>
      <div id="createComments(${i})">
         <span>${books[i].comments[commentIndex]}
-    </span>
+    </span> 
+    <div class="btn-comment">
+        <input id="comment-input" type="text">
+        <button  onclick="saveData()">Speichern</button>
+    </div>
 
      </div>
      </div>

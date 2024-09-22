@@ -11,3 +11,22 @@
     height: 160px;
 
   }
+
+.btn-comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+}
+input {
+    border-radius: 5px;
+    width: 180px;
+    height: 60px;
+}
+button{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #9a4abfbf;
+    color: #dabfe787;
+}
