@@ -24,28 +24,27 @@
                 Erscheinungsjahr : ${books[indexBook].publishedYear} <br>
                 Genre : ${books[indexBook].genre}
             </span>
-         </div>
-         <div id="comment-section">
-         <h2>Kommentare</h2>
-         <div>
-           <input id="input-comment" type="text">
-           <button class="btn">Speichern</button>
-       </div>
-       <div >
-
-       </div>
             </div>
-    </div>
-        `
+        <h3>Kommentare:</h3>
+            <div id="commentsForBook${indexBook}">
+            <div>
+                    <input id="input-comment" type="text">
+                    <button class="btn">Speichern</button>
+       </div>
+        </div>`
     }
 
  
-   /* function getCommentTemplate(indexComment,indexBook) {
-        
-        return
+    function getCommentTemplate(indexComment,indexBook) {
+        return /*html*/`
+            <div>
+                ${books[indexBook].comments[indexComment].name} sagt dazu: <br>
+                ${books[indexBook].comments[indexComment].comment}
+            </div>
+        `
         
     }
-    */
+    
  
  
  /* return html`

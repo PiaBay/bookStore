@@ -184,10 +184,15 @@ let books = [
       }
 
   function renderComments(indexBook) {
-    let commentContentRef = document.getElementById('comment-section');
+    let commentContentRef = document.getElementById('commentsForBook' + indexBook);
+
+    if (books[indexBook].comments.length == 0) {
+      commentContentRef.innerHTML = "Zu diesem Buch hat noch niemand etwas gesagt... Sei der erste!"
+      return
+    }
     
     for (let indexComment = 0; indexComment < books[indexBook].comments.length; indexComment++) {
-      commentContentRef.innerHTML += indexComment; `
+      commentContentRef.innerHTML +=  `
         
       
        <div class="comment-field" >
@@ -201,6 +206,7 @@ let books = [
       
     }
   }
+    
     
 
 
