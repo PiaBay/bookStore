@@ -1,0 +1,48 @@
+body {
+background-color: #dabfe787;
+margin: 0;
+width: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+h1{
+  font-family: Moderustic;
+  font-weight: 300;
+  font-size: 44px;
+  color: #9a4abf;
+
+}
+
+h2{
+  font-size: 24px;
+  font-weight: 300;
+  font-family: Moderustic;
+  text-align: center;
+}
+
+h3{
+  font-size: 30px;
+  font-weight: 400;
+  font-family: Moderustic;
+  margin: 0;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#book {
+width: 500px;
+border: 2px solid #9a4abf;
+margin-bottom: 40px;
+
+}
+
+.d-none{
+display: none;
+}

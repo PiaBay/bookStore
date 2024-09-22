@@ -1,0 +1,63 @@
+.mini-book{
+    height: 80px;
+    width: 60px;
+}
+.titles{
+    border: #382db3;
+
+}
+.book_picture {
+    background:  #c7a1d9;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .price_and_like{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+  }
+  .price{
+    font-size: 30px;
+    font-family: Moderustic;
+    padding: 28px;
+
+  }
+  .heart{
+    width: 40px;
+    height: 40px;
+    padding: 30px;
+  }
+  .heart-liked{
+    width: 40px;
+    height: 40px;
+    padding: 30px;
+
+  }
+  .like{
+    font-family: Moderustic;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .book-info{
+    background:  #c7a1d9;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  span{
+    font-family: Moderustic;
+    font-weight: 400;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

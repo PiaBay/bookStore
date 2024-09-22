@@ -1,0 +1,13 @@
+#createComments {
+    width: 150px;
+    height: 300px;
+    display: flex;
+    border: solid blue;
+    flex-direction: column;
+}
+
+.ccomments-section{
+    display: flex;
+    height: 160px;
+
+  }
