@@ -25,7 +25,8 @@
                 Genre : ${books[indexBook].genre}
             </span>
             </div>
-        </div>
+        <h3>Kommentare:</h3>
+        <div id="commentsForBook${indexBook}"/>
         </div>`
     }
 
@@ -33,6 +34,7 @@
     function getCommentTemplate(indexComment,indexBook) {
         return /*html*/`
             <div>
+                ${books[indexBook].comments[indexComment].name} sagt dazu: <br>
                 ${books[indexBook].comments[indexComment].comment}
             </div>
         `
