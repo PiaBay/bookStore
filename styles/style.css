@@ -19,17 +19,26 @@ h1{
 }
 
 h2{
-  font-size: 24px;
-  font-weight: 300;
+  font-size: 30px;
+  font-weight: 400;
   font-family: Moderustic;
   text-align: center;
 }
 
 h3{
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 380;
   font-family: Moderustic;
   margin: 0;
+}
+
+span{
+  font-family: Moderustic;
+  font-weight: 380;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main{
   display: flex;

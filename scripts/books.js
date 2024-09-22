@@ -176,24 +176,20 @@ let books = [
 
   function renderBooks() {
     let contBook = document.getElementById('main-container');
-    for (let i = 0; i < books.length; i++) {
-        contBook.innerHTML += getBookHtml(i);
-        getComment(i)
+    for (let indexBook = 0; indexBook < books.length; indexBook++) {
+        contBook.innerHTML += getBookHtml(indexBook);
+        getComment()
     }
       }
     
 
-function getComment(i) {
+function getComment() {
 
-  let commentHtml = document.getElementById('createComments(${i})');
-  for (let commentIndex = 0; commentIndex < books[i].comments.length; commentIndex++) {
-    let comment = books[i].comments[commentIndex];
-    commentHtml +=  /*html*/`
-    <div>
-        <div class="comment-user">
-        </div>
-    
-    </div> 
-    `  
+  let commentHtml = "";
+  for (let commentIndex = 0; commentIndex < books[indexBook].comments.length; commentIndex++) {
+    let commentHtml = books[indexBook].comments[commentIndex];
+    commentHtml += getBookHtml(commentIndex); 
+   
 }
+return commentHtml;
 }
