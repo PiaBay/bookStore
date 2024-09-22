@@ -10,14 +10,13 @@
     height: 200px;
 width: 300px;
 border: 10px solid blue;
+flex-direction: column;
 
   }
 
 
 input {
-    position: absolute;
-    top: 0;
-    left: 0;
+    
     border-radius: 5px;
     width: 180px;
     height: 60px;

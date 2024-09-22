@@ -187,7 +187,17 @@ let books = [
     let commentContentRef = document.getElementById('comment-section');
     
     for (let indexComment = 0; indexComment < books[indexBook].comments.length; indexComment++) {
-      commentContentRef.innerHTML += getCommentTemplate(indexComment,indexBook);
+      commentContentRef.innerHTML += indexComment; `
+        
+      
+       <div class="comment-field" >
+           ${books[indexBook].comments[indexComment].name}
+       </div>
+       <div class="user">
+       ${books[indexBook].comments[indexComment].comment}
+       </div>
+   </div>
+   `
       
     }
   }
