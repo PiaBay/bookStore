@@ -2,24 +2,22 @@
     width: 150px;
     height: 300px;
     display: flex;
-    border: solid blue;
     flex-direction: column;
 }
 
-.ccomments-section{
+#comment-section{
     display: flex;
-    height: 160px;
+    height: 200px;
+width: 300px;
+border: 10px solid blue;
 
   }
 
-.btn-comment {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    gap: 30px;
-}
+
 input {
+    position: absolute;
+    top: 0;
+    left: 0;
     border-radius: 5px;
     width: 180px;
     height: 60px;

@@ -174,22 +174,45 @@ let books = [
     }
   ]
 
+
   function renderBooks() {
     let contBook = document.getElementById('main-container');
     for (let indexBook = 0; indexBook < books.length; indexBook++) {
         contBook.innerHTML += getBookHtml(indexBook);
-        getComment()
+     renderComments(indexBook);
+    }
+      }
+
+  function renderComments(indexBook) {
+    let commentContentRef = document.getElementById('comment-section');
+    
+    for (let indexComment = 0; indexComment < books[indexBook].comments.length; indexComment++) {
+      commentContentRef.innerHTML += getCommentTemplate(indexComment,indexBook);
+      
+    }
+  }
+    
+
+
+  /*function renderBooks() {
+    let contBook = document.getElementById('main-container');
+    for (let indexBook = 0; indexBook < books.length; indexBook++) {
+        contBook.innerHTML += getBookHtml(indexBook,getComment(commentIndex));
+        getComment(indexBook)
     }
       }
     
 
-function getComment() {
+function getComment(indexBook) {
 
   let commentHtml = "";
   for (let commentIndex = 0; commentIndex < books[indexBook].comments.length; commentIndex++) {
     let commentHtml = books[indexBook].comments[commentIndex];
-    commentHtml += getBookHtml(commentIndex); 
-   
+    commentHtml += /*html*/`
+      
+    ` 
+   /*
 }
 return commentHtml;
 }
+*/ 
