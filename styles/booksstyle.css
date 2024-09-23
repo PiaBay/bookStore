@@ -25,25 +25,7 @@
     padding: 28px;
 
   }
-  .heart{
-    width: 40px;
-    height: 40px;
-    padding: 30px;
-  }
-  .heart-liked{
-    width: 40px;
-    height: 40px;
-    padding: 30px;
 
-  }
-  .like{
-    font-family: Moderustic;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    font-size: 18px;
-  }
   .book-info{
     background:  #c7a1d9;
     height: 140px;

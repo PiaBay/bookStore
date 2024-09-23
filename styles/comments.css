@@ -1,29 +1,50 @@
-#createComments {
-    width: 150px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
+.comment-section {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.input-field {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input-comment {
+  border-radius: 5px;
+  margin-top: 40px;
+  width: 250px;
+  padding: 10px;
+  font-size: 15px;
+}
+#input-name {
+  border-radius: 5px;
+  padding: 5px;
+  width: 150px;
+  font-size: 15px;
+  font-weight: bold;
 }
 
-#comment-section{
-    display: flex;
-    height: 200px;
-width: 300px;
-border: 10px solid blue;
-flex-direction: column;
-
-  }
-
-
-input {
-    
-    border-radius: 5px;
-    width: 180px;
-    height: 60px;
+.btn {
+  width: 80px;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #9a4abfbf;
+  color: #dabfe787;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
 }
-button{
-    border-radius: 5px;
-    padding: 5px;
-    background-color: #9a4abfbf;
-    color: #dabfe787;
+.add-comment {
+  display: flex;
+  text-align: center;
+  flex-direction: column-reverse;
+  padding: 15px;
+  gap: 10px;
+  font-family: Moderustic;
+}
+
+.user {
+  font-weight: bold;
 }

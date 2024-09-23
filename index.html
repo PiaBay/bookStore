@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookstore</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/booksstyle.css">
-    <link rel="stylesheet" href="./styles/comments.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/booksstyle.css" />
+    <link rel="stylesheet" href="./styles/comments.css" />
+    <link rel="stylesheet" href="./styles/addlike.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
     <script src="./scripts/books.js"></script>
     <script src="./scripts/template.js"></script>
     <script src="./scripts/comments.js"></script>
-</head>
-<body onload="renderBooks()">
+    <script src="./scripts/addlike.js"></script>
+  </head>
+  <body onload="init()">
     <header>
-        <h1 class="headline">Pia's Bücherladen</h1>
-
-
+      <h1 class="headline">Pia's Bücherladen</h1>
     </header>
     <main>
-        <div id="main-container">
-            
-          
-        </div>
+      <div id="main-container"></div>
     </main>
-    
-</body>
+  </body>
 </html>
