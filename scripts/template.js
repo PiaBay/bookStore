@@ -31,7 +31,7 @@ function getBookHtml(indexBook) {
             <div class="input-field">
                 <input id="input-name" type="text" placeholder="User-name">
                 <input class="input-comment" type="text" placeholder="dein Kommentar...">
-                <button onclick="saveDataUser();saveDataComment(); "class="btn">Speichern</button>
+                <button onclick="saveDataUser(${indexBook});saveDataComment(${indexBook}); "class="btn">Speichern</button>
             </div>
         </div>`;
 }

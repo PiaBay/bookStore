@@ -7,4 +7,5 @@ function addlike(indexBook) {
     addlike.likes++;
     addlike.liked = true;
   }
+  renderBooks();
 }

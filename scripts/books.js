@@ -195,10 +195,11 @@ let books = [
 
 function init(params) {
   renderBooks();
-  //getFromLocalStorage();
+  getFromLocalStorage();
 }
 function renderBooks() {
   let contBook = document.getElementById("main-container");
+  contBook.innerHTML = "";
   for (let indexBook = 0; indexBook < books.length; indexBook++) {
     contBook.innerHTML += getBookHtml(indexBook);
     renderComments(indexBook);

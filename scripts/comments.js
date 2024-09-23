@@ -1,18 +1,22 @@
-let user = [];
 let comment = [];
+function addComments() {
+  let commentInputRef = document.getElementById("input-comment");
+  let commentInput = commentInputRef.value;
+  comment.push(commentInput);
+  renderComments(indexBook);
+  commentInputRef.value = "";
+}
 
 function saveDataUser() {
   let inputRef = document.getElementById("input-name");
-  if (localStorage.getItem("user") !== null) {
+  {
     user.push(inputRef.value);
-    console.log("geht nichzt");
   }
-  //if (inputRef.value != "") {
+  if (inputRef.value != "") {
+  }
 
-  //}
-
-  //saveToLocalStorage();
-  renderComments();
+  saveToLocalStorage();
+  renderComments(indexBook);
   inputRef.value = "";
 }
 function saveDataComment() {
@@ -22,12 +26,12 @@ function saveDataComment() {
     comment.push(commentRef.value);
   }
 
-  //saveToLocalStorage();
-  renderComments();
+  saveToLocalStorage();
+  renderComments(indexBook);
   commentRef.value = "";
 }
 
-/*function saveToLocalStorage() {
+function saveToLocalStorage() {
   localStorage.setItem("user", JSON.stringify(user));
   localStorage.setItem("comment", JSON.stringify(comment));
 }
@@ -41,4 +45,4 @@ function getFromLocalStorage() {
   if (comment == null) {
     comment = comment;
   }
-}*/
+}
