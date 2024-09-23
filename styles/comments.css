@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
 }
-.input-comment {
+#input-comment {
   border-radius: 5px;
   margin-top: 40px;
   width: 250px;

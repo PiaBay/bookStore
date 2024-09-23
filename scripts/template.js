@@ -30,8 +30,11 @@ function getBookHtml(indexBook) {
             <div id="commentsForBook${indexBook}" class="comment-section">
             <div class="input-field">
                 <input id="input-name" type="text" placeholder="User-name">
-                <input class="input-comment" type="text" placeholder="dein Kommentar...">
-                <button onclick="saveDataUser(${indexBook});saveDataComment(${indexBook}); "class="btn">Speichern</button>
+                <input ${
+                  books[indexBook]
+                } id="input-comment" type="text" placeholder="dein Kommentar...">
+
+                <button onclick="addComments(indexBook)"class="btn">Speichern</button>
             </div>
         </div>`;
 }

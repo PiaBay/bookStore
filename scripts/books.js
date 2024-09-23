@@ -195,7 +195,6 @@ let books = [
 
 function init(params) {
   renderBooks();
-  getFromLocalStorage();
 }
 function renderBooks() {
   let contBook = document.getElementById("main-container");
@@ -210,7 +209,6 @@ function renderComments(indexBook) {
   let commentContentRef = document.getElementById(
     "commentsForBook" + indexBook
   );
-
   if (books[indexBook].comments.length == 0) {
     commentContentRef.innerHTML += `
       <p>Zu diesem Buch hat noch niemand etwas gesagt... Sei der erste!</p>
@@ -231,6 +229,7 @@ function renderComments(indexBook) {
        <div class="user">
        ${books[indexBook].comments[indexComment].name}
        </div>
+
     </div>
    
    

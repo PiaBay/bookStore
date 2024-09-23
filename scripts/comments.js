@@ -1,13 +1,12 @@
-let comment = [];
-function addComments() {
+function addComments(indexBook) {
   let commentInputRef = document.getElementById("input-comment");
   let commentInput = commentInputRef.value;
-  comment.push(commentInput);
-  renderComments(indexBook);
+  books[indexBook].comments.push(commentInput);
   commentInputRef.value = "";
+  renderBooks();
 }
 
-function saveDataUser() {
+/*function saveDataUser() {
   let inputRef = document.getElementById("input-name");
   {
     user.push(inputRef.value);
@@ -16,7 +15,6 @@ function saveDataUser() {
   }
 
   saveToLocalStorage();
-  renderComments(indexBook);
   inputRef.value = "";
 }
 function saveDataComment() {
@@ -46,3 +44,4 @@ function getFromLocalStorage() {
     comment = comment;
   }
 }
+*/
