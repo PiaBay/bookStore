@@ -231,8 +231,6 @@ function renderComments(indexBook) {
        </div>
 
     </div>
-   
-   
    `;
   }
 }
