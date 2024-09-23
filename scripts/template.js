@@ -1,4 +1,5 @@
 function getBookHtml(indexBook) {
+  let heartClass = books[indexBook].liked ? "heart_filled" : "heart_empty";
   return /*html*/ `
     <div id="book">
             <h2 class="titles">${books[indexBook].name}</h2>
@@ -10,10 +11,11 @@ function getBookHtml(indexBook) {
                 ${books[indexBook].price.toFixed(2).replace(".", ",")}€
               </div>
               
-            <div class="like">
-                ${books[indexBook].likes}
-                <img class="heart-liked" id="liked" src="./img/heart-liked.png"> 
-                <img  class="heart d-none" src="./img/heart-unliked.png">
+            <div>
+                <div class="heart-liked">${books[indexBook].likes}</div>
+                <div id="liked_${indexBook}" class="heart ${heartClass}" onclick="addlike(${indexBook})">
+                    <img src="./img/heart-liked.png" alt="">
+                </div>
             </div>
         </div>
          <div class="book-info">

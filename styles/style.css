@@ -61,3 +61,14 @@ main {
 .d-none {
   display: none;
 }
+
+@media (max-width: 550px) {
+  #book {
+    width: 380px;
+  }
+}
+@media (max-width: 430px) {
+  #book {
+    width: 300px;
+  }
+}

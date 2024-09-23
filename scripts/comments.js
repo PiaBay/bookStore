@@ -3,37 +3,42 @@ let comment = [];
 
 function saveDataUser() {
   let inputRef = document.getElementById("input-name");
-  if (inputRef.value != "") {
+  if (localStorage.getItem("user") !== null) {
     user.push(inputRef.value);
+    console.log("geht nichzt");
   }
+  //if (inputRef.value != "") {
 
-  saveToLocalStorage();
+  //}
+
+  //saveToLocalStorage();
   renderComments();
   inputRef.value = "";
 }
 function saveDataComment() {
   let commentRef = document.getElementById("input-comment");
+
   if (commentRef.value != "") {
     comment.push(commentRef.value);
   }
 
-  saveToLocalStorage();
+  //saveToLocalStorage();
   renderComments();
   commentRef.value = "";
 }
 
-function saveToLocalStorage() {
+/*function saveToLocalStorage() {
   localStorage.setItem("user", JSON.stringify(user));
   localStorage.setItem("comment", JSON.stringify(comment));
 }
 
 function getFromLocalStorage() {
   user = JSON.parse(localStorage.getItem("user"));
-  if (user == 0) {
+  if (user == null) {
     user = user;
   }
   comment = JSON.parse(localStorage.getItem(comment));
-  if (comment == 0) {
+  if (comment == null) {
     comment = comment;
   }
-}
+}*/

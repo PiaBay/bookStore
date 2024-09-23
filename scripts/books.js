@@ -195,7 +195,7 @@ let books = [
 
 function init(params) {
   renderBooks();
-  getFromLocalStorage();
+  //getFromLocalStorage();
 }
 function renderBooks() {
   let contBook = document.getElementById("main-container");
