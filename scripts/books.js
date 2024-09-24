@@ -1,4 +1,4 @@
-let books = [
+let books = JSON.parse(localStorage.getItem("books")) || [
   {
     name: "Die Geheimnisse des Ozeans",
     author: "Clara Meer",
@@ -194,6 +194,7 @@ let books = [
 ];
 
 function init(params) {
+  //getFromLocalStorage();
   renderBooks();
 }
 function renderBooks() {
