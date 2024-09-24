@@ -1,7 +1,11 @@
 function addComments(indexBook) {
   let commentInputRef = document.getElementById("input-comment" + indexBook);
   let commentInput = commentInputRef.value;
-  books[indexBook].comments.push(commentInput);
+
+  if (commentInputRef.value != "" && commentInputRef != null) {
+    books[indexBook].comments.push(commentInput);
+  }
+
   commentInputRef.value = "";
   renderBooks();
 }
